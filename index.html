@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Sin esta línea el móvil muestra la web "en pequeño" como si fuera de escritorio -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samuel · Desarrollador Java con la vista en la IA</title>
+  <meta name="description" content="Portfolio de Samuel, estudiante de 2.º de DAM en Davante. Java, bases de datos e inteligencia artificial.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Enlace oculto para quien navega con teclado: salta directo al contenido -->
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <nav class="nav contenedor" aria-label="Principal">
+      <a class="logo" href="#inicio">Samuel<span>.dev</span></a>
+      <ul class="nav__enlaces">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ PORTADA ============ -->
+    <section id="inicio" class="portada contenedor">
+      <!-- Si quieres foto: <img src="foto.jpg" alt="Foto de Samuel" class="avatar"> -->
+      <div class="avatar" aria-hidden="true">S</div>
+      <div>
+        <p class="etiqueta">2.º DAM · Davante · 2026/2027</p>
+        <h1>Programo en Java.<br><span class="resalte">Pienso en cómo la IA puede hacerlo mejor.</span></h1>
+        <p class="entradilla">
+          Soy Samuel. Construyo aplicaciones con Java y bases de datos, y estoy aprendiendo
+          a llevar la inteligencia artificial a software real.
+        </p>
+        <div class="botones">
+          <a class="boton boton--primario" href="#proyectos">Ver proyectos</a>
+          <a class="boton" href="https://github.com/Subliii">GitHub</a>
+          <a class="boton" href="https://www.linkedin.com/in/samuel-santiago-moreno/">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section id="sobre-mi" class="seccion contenedor">
+      <h2>Sobre mí</h2>
+      <p>
+        Estudio 2.º de Desarrollo de Aplicaciones Multiplataforma en Davante. Empecé por Java
+        y las bases de datos, y ahí sigue mi base: entender bien cómo se guardan y se mueven los datos.
+      </p>
+      <p>
+        Lo que más me engancha es la inteligencia artificial. Quiero aprender a integrarla en
+        aplicaciones de verdad, no solo a usarla, y busco prácticas donde pueda hacerlo.
+      </p>
+      <h3>Me interesa</h3>
+      <ul class="chips">
+        <li>🤖 Inteligencia artificial</li>
+        <li>☕ Backend con Java</li>
+        <li>🗄️ Bases de datos</li>
+      </ul>
+    </section>
+
+    <!-- ============ TECNOLOGÍAS ============ -->
+    <section id="tecnologias" class="seccion contenedor">
+      <h2>Tecnologías</h2>
+      <p class="nota">Las que uso a diario y sabría defender.</p>
+      <div class="rejilla rejilla--tec">
+        <article class="tarjeta">
+          <h3>Backend</h3>
+          <ul><li>Java</li><li>Maven</li><li>JDBC</li></ul>
+        </article>
+        <article class="tarjeta">
+          <h3>Bases de datos</h3>
+          <ul><li>MySQL</li><li>SQL</li></ul>
+        </article>
+        <article class="tarjeta">
+          <h3>Herramientas</h3>
+          <ul><li>NetBeans</li><li>Visual Studio Code</li><li>Git y GitHub</li></ul>
+        </article>
+        <article class="tarjeta">
+          <h3>Web</h3>
+          <ul><li>HTML</li><li>CSS</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section id="proyectos" class="seccion contenedor">
+      <h2>Proyectos</h2>
+      <div class="rejilla">
+
+        <article class="tarjeta proyecto">
+          <h3>PracticaJDBC</h3>
+          <p>
+            Aplicación Java con Maven que se conecta a una base de datos MySQL mediante JDBC:
+            listado de alumnos, inserciones, transacciones con <code>commit</code>/<code>rollback</code>
+            y lectura de metadatos de la base de datos.
+          </p>
+          <ul class="chips chips--peq"><li>Java 25</li><li>Maven</li><li>MySQL</li><li>JDBC</li></ul>
+          <a class="enlace" href="https://github.com/Subliii/PracticaJDBC">Ver repositorio →</a>
+        </article>
+
+        <article class="tarjeta proyecto">
+          <h3>Portfolio web</h3>
+          <p>
+            Esta web. HTML y CSS sin frameworks, adaptada a móvil y escritorio,
+            con modo claro/oscuro automático y publicada con GitHub Pages.
+          </p>
+          <ul class="chips chips--peq"><li>HTML</li><li>CSS</li><li>GitHub Pages</li></ul>
+          <a class="enlace" href="https://github.com/Subliii/Subliii.github.io">Ver código →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section id="contacto" class="seccion contenedor">
+      <h2>Contacto</h2>
+      <p>¿Buscas a alguien para prácticas, tienes un proyecto con IA o quieres hablar de código? Escríbeme.</p>
+      <div class="botones">
+        <a class="boton boton--primario" href="mailto:samuelmalaga07@gmail.com">samuelmalaga07@gmail.com</a>
+        <a class="boton" href="https://www.linkedin.com/in/samuel-santiago-moreno/">LinkedIn</a>
+        <a class="boton" href="https://github.com/Subliii">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie contenedor">
+    <p>© 2026 Samuel · Hecha a mano con HTML y CSS.</p>
+  </footer>
+
+</body>
+</html>
