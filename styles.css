@@ -153,6 +153,9 @@ section[id] { scroll-margin-top: 5rem; }
 .tarjeta ul { margin: 0; padding-left: 1.1rem; color: var(--texto-suave); }
 
 .proyecto { display: flex; flex-direction: column; }
+/* Proyecto destacado: borde del color de acento */
+.proyecto--destacado { border-color: var(--acento); }
+.proyecto--destacado .etiqueta { margin-bottom: .4rem; }
 .proyecto p { color: var(--texto-suave); flex: 1; }
 .enlace { font-weight: 600; text-decoration: none; margin-top: .75rem; }
 .enlace:hover { text-decoration: underline; }
